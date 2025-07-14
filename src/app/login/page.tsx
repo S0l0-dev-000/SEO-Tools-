@@ -1,10 +1,10 @@
-import { LoginForm } from '@/components/LoginForm';
-import { Navigation } from '@/components/Navigation';
+import { NextAuthLoginForm } from '@/components/NextAuthLoginForm';
+import { NextAuthNavigation } from '@/components/NextAuthNavigation';
 
 export default function LoginPage() {
   return (
     <div className="min-h-screen bg-gray-50">
-      <Navigation currentPage="login" />
+      <NextAuthNavigation currentPage="login" />
       
       <div className="flex flex-col justify-center py-12 sm:px-6 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
@@ -26,7 +26,7 @@ export default function LoginPage() {
 
         <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
           <div className="bg-white py-8 px-4 shadow-lg sm:rounded-2xl sm:px-10 border border-gray-100">
-            <LoginForm />
+            <NextAuthLoginForm />
           </div>
         </div>
       </div>
