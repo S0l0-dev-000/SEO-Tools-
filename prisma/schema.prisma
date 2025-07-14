@@ -51,7 +51,7 @@ model Purchase {
   stripePaymentId String   @unique
   amount          Float
   currency        String   @default("usd")
-  status          String   // "pending", "completed", "failed"
+  status          String   // "pending", "completed", "failed", "refunded", "disputed"
   createdAt       DateTime @default(now())
   updatedAt       DateTime @updatedAt
   
